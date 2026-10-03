@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7f5;
+    color: #222;
+}
+
+
+/* Header */
+
+header {
+    background-color: white;
+    height: 75px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #198754;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    margin: 0 15px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #198754;
+}
+
+.login-btn {
+    background-color: transparent;
+    border: 1px solid #198754;
+    color: #198754;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 550px;
+    padding: 80px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dff3e4;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.small-title {
+    color: #198754;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-text > p:not(.small-title) {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.start-btn {
+    background-color: #198754;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.start-btn:hover {
+    background-color: #146c43;
+}
+
+
+/* Hero Box */
+
+.hero-box {
+    width: 350px;
+    height: 350px;
+    background-color: #198754;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.fitness-icon {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.hero-box h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+/* Sections */
+
+.section {
+    padding: 80px 7%;
+    text-align: center;
+}
+
+.section > h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+
+/* Cards */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 280px;
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card button {
+    border: 1px solid #198754;
+    background-color: white;
+    color: #198754;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+/* Nutrition */
+
+.nutrition {
+    padding: 80px 7%;
+    background-color: #1d3025;
+    color: white;
+    text-align: center;
+}
+
+.nutrition div {
+    max-width: 700px;
+    margin: auto;
+}
+
+.nutrition h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.nutrition p:not(.small-title) {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+
+/* Trainers */
+
+.trainer {
+    background-color: white;
+    width: 250px;
+    padding-bottom: 25px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.trainer-photo {
+    height: 180px;
+    background-color: #dff3e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+
+.trainer h3 {
+    margin-top: 20px;
+}
+
+.trainer p {
+    color: #666;
+    margin-top: 8px;
+}
+
+
+/* Contact */
+
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #dff3e4;
+}
+
+.contact h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    margin-bottom: 25px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #15231b;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+footer h2 {
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 8px;
+    color: #ccc;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    header {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-box {
+        width: 280px;
+        height: 280px;
+    }
+
+}
